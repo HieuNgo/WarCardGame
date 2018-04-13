@@ -1,6 +1,6 @@
 /*Hieu Ngo
  * 4/10/2018
- * Lab 9 
+ * War Card Game implementation 
  * */
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class WarCardGame {
 	static Scanner input = new Scanner(System.in);
 	// gameMode: boolean variable to determine the Game Mode (false:simulated || true:playable)
 	static boolean gameMode = false;
-	/* TODO: Your code here.
+	/* 
 	 * 1) Initialize 6 instances of Deck
 	 * 		x2 Player Decks
 	 * 		x2 Player War Decks
@@ -36,7 +36,7 @@ public class WarCardGame {
 		Player1Deck.newDeck();
 		//Player1Deck.displayDeck();
 		
-		/* TODO: Your code here.
+		/* 
 		 * 2) Split the deck by removing 26 cards from Player1Deck and adding them to Player2's
 		 */
 		/*******************************************************************************/
@@ -59,7 +59,7 @@ public class WarCardGame {
 			
 			while (war)
 			{
-				/* TODO: Your code here.
+				/* 
 				 * 10) Check if either player has won the game
 				 * 11) Check if either players' Deck is empty, if so, then shuffle their Win pile into their Deck
 				 * 12) Remove 1 card from either players' Deck, and add it to their respective War pile
@@ -111,7 +111,7 @@ public class WarCardGame {
 	// Method to shuffle Player 1's Win pile back into the deck
 	private static void shuffleWinP1(){
 		System.out.println("Player 1 is out of cards in their deck. Shuffling in their win pile...");
-		/* TODO: Your code here.
+		/* 
 		 * 3) Remove all of the cards from Player 1's Win pile and add them to Player 1's Deck
 		 * 	  Then, shuffle Player 1's Deck
 		 */
@@ -127,7 +127,7 @@ public class WarCardGame {
 	// Method to shuffle Player 2's Win pile back into the deck
 	private static void shuffleWinP2(){
 		System.out.println("Player 2 is out of cards in their deck. Shuffling in their win pile...");
-		/* TODO: Your code here.
+		/*
 		 * 4) Remove all of the cards from Player 2's Win pile and add them to Player 2's Deck
 		 * 	  Then, shuffle Player 2's Deck
 		 */
@@ -143,7 +143,7 @@ public class WarCardGame {
 	
 	// Method to draw 3 cards for War (or however many are remaining if less) for Player 1
 	private static void drawWarP1(){
-		/* TODO: Your code here.
+		/* 
 		 * 5) Remove 3 cards, or however many are remaining if less, from Player 1's Deck and add them to Player 1's War pile
 		 */
 		/*******************************************************************************/
@@ -159,7 +159,7 @@ public class WarCardGame {
 	
 	// Method to draw 3 cards for War (or however many are remaining if less) for Player 2
 	private static void drawWarP2(){
-		/* TODO: Your code here.
+		/* 
 		 * 6) Remove 3 cards, or however many are remaining if less, from Player 2's Deck and add them to Player 2's War pile
 		 */
 		/*******************************************************************************/
@@ -176,7 +176,7 @@ public class WarCardGame {
 	// Method to take all of the war cards and place them in Player 1's Win pile
 	private static void winWarP1(){
 		System.out.println("Player 1 wins the battle!");
-		/* TODO: Your code here.
+		/* 
 		 * 7) Remove all of the cards from Player 1's War pile and add them to Player 1's Win pile
 		 * 	  Then, remove all of the cards from Player 2's War pile and add them to Player 1's Win pile
 		 */
@@ -194,7 +194,7 @@ public class WarCardGame {
 	
 	// Method to take all of the war cards and place them in Player 2's Win pile
 	private static void winWarP2(){
-		/* TODO: Your code here.
+		/* 
 		 * 8) Remove all of the cards from Player 1's War pile and add them to Player 2's Win pile
 		 * 	  Then, remove all of the cards from Player 2's War pile and add them to Player 2's Win pile
 		 */
@@ -212,7 +212,7 @@ public class WarCardGame {
 	
 	// Method to check if either player has won the game
 	private static void checkForWin(){
-		/* TODO: Your code here.
+		/* 
 		 * 9) Check if either player has won the game (The opposite player's Deck and Win pile are empty)
 		 * 	  Or if a tie occurs. If a tie occurs, print an end game message and exit.
 		 * 	  If a player wins, print a victory message, then exit the game.
